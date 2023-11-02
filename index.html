@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Переводчик</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="body">
+<div class="container translator-container">
+    <h1 class="title">Онлайн Переводчик</h1>
+
+    <div class="row" style="margin-top: 25px;">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="label" for="fromLanguage">Исходный язык</label>
+                <select class="form-control" id="fromLanguage"></select>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="label" for="toLanguage">Целевой язык</label>
+                <select class="form-control" id="toLanguage"></select>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label class="label" for="inputText">Текст для перевода</label>
+                <textarea class="form-control" id="inputText" rows="4"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8" style="margin-top: 35px; margin-left: 230px;">
+            <button class="btn btn-primary1" id="translateButton">Перевести</button>
+            <button class="btn btn-primary2" id="translateImage">Перевод по фото</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="row" style="margin-top: 25px;">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label class="label" for="outputText">Результат перевода</label>
+                <textarea class="form-control" id="outputText" rows="4" readonly></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="script.js"></script>
